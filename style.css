@@ -73,14 +73,66 @@ body {
   /* background-color: aquamarine; */
 }
 
+/* Header Section */
+.header {
+  height: 10.2rem;
+  padding: 0 4.8rem;
+  display: flex;
+  background-color: #fdf2e9;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 5.6rem;
+}
+
+/* Navigation Section */
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 4.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.mllast:link,
+.main-nav-link.mllast:visited {
+  border-radius: 8px;
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.mllast:hover,
+.main-nav-link.mllast:active {
+  background-color: #cf711f ;
+}
+
+/* HERO SECTION */
+/*  */
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 5.4rem 0 9.6rem 0;
 }
 
 .hero {
   max-width: 130rem;
-
+  padding: 0 3.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0px auto;
@@ -144,32 +196,31 @@ body {
   margin-right: 2.5rem;
 }
 
-.delivered-meals{
-    margin-top: 9rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
+.delivered-meals {
+  margin-top: 9rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
-.delivered-imgs{
-    display: flex;
+.delivered-imgs {
+  display: flex;
 }
-.delivered-imgs img{
-    height: 4.8rem;
-    width: 4.8rem;
-    border-radius: 50%;
-    margin-right: -1.6rem;
-    border: 3px solid #fdf2e9;
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
 }
 /* last element margin removed */
-.delivered-imgs img:last-child{
-    margin: 0;
+.delivered-imgs img:last-child {
+  margin: 0;
 }
 
-
-.delivered-text{
-    font-size: 1.8rem;
-    font-weight: 600;
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
-.delivered-text span{
-    color: #cf711f;
+.delivered-text span {
+  color: #cf711f;
 }
